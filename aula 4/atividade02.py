@@ -9,14 +9,15 @@
 # abaixo de 3000 em vendas, nao ha bonus 
 
 salario = float (input('Qual o salario? R$'))
+vendas = float (input('vendas: '))
 
-if salario >= 5000:
-    total_salario = salario + 500
-    print (f'o total do seu salario sera: R$ {total_salario}')
+if vendas >= 5000:
+    salario += 500
+    print (f'o total do seu salario sera: R$ {salario}')
 
-elif salario >= 3000:
-    total_salario = salario + 250
-    print (f'o total do seu salario sera: R$ {total_salario}')
+elif vendas >= 3000:
+    salario += 250
+    print (f'o total do seu salario sera: R$ {salario}')
 
 else:
     print(f'voce nao tera bonus! seu salario sera: R$ {salario}')
